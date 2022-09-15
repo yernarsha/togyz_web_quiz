@@ -31,7 +31,7 @@
       $questions[$row[0]] = $row[1];
       if (array_key_exists($row[0], $answers)) {
           $i++;
-          if ($answers[$row[0]] === $row[2]) {
+          if ($answers[$row[0]] == $row[2]) {
               $correct++;
           } else {
               $wrong[] = $row[0];
